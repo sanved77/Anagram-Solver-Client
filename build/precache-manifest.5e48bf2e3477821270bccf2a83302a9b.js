@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0edb9a24ba18fd61730cbdb4acb93b5",
+    "revision": "8e066f34c72989cc29c974e73607d634",
     "url": "/anagram/index.html"
   },
   {
-    "revision": "8dfff55c94db99bad6e4",
-    "url": "/anagram/static/css/main.43136d3b.chunk.css"
+    "revision": "4da45fb5bc34a4af66a7",
+    "url": "/anagram/static/css/main.fc879be2.chunk.css"
   },
   {
     "revision": "dcfdf08e63db5fd94cda",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/anagram/static/js/2.acb07290.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8dfff55c94db99bad6e4",
-    "url": "/anagram/static/js/main.672c9f1f.chunk.js"
+    "revision": "4da45fb5bc34a4af66a7",
+    "url": "/anagram/static/js/main.a3068a48.chunk.js"
   },
   {
     "revision": "247102a8c6718dbeca8b",

@@ -11,6 +11,7 @@ class App extends Component {
       data: {},
       loading: "",
       speak: false,
+      warning: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.grabTheAnagrams = this.grabTheAnagrams.bind(this);
@@ -30,32 +31,39 @@ class App extends Component {
   }
 
   grabTheAnagrams() {
-    this.setState({
-      loading: "is-loading",
-    });
-    const proxy = "https://cors-anywhere.herokuapp.com/";
-    const api = "http://sanved.com/anagram-api?word=" + this.state.term;
-    fetch(proxy + api, {
-      method: "GET",
-      headers: {
-        "Content-Type": "text/plain",
-      },
-    })
-      .then((response) => response.json())
-      .then((wdata) => {
-        this.setState({
-          data: wdata,
-          searched: true,
-        });
-      })
-      .catch((e) => {
-        console.log(e);
-      })
-      .finally(() => {
-        this.setState({
-          loading: "",
-        });
+    if (/^[A-Za-z]+$/.test(this.state.term)) {
+      this.setState({
+        loading: "is-loading",
+        warning: false,
       });
+      const proxy = "https://cors-anywhere.herokuapp.com/";
+      const api = "http://sanved.com/anagram-api?word=" + this.state.term;
+      fetch(proxy + api, {
+        method: "GET",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+      })
+        .then((response) => response.json())
+        .then((wdata) => {
+          this.setState({
+            data: wdata,
+            searched: true,
+          });
+        })
+        .catch((e) => {
+          console.log(e);
+        })
+        .finally(() => {
+          this.setState({
+            loading: "",
+          });
+        });
+    } else {
+      this.setState({
+        warning: true,
+      });
+    }
   }
 
   render() {
@@ -77,6 +85,7 @@ class App extends Component {
             </button>
           </div>
         </div>
+        {this.state.warning && <div className="warning">Please only enter alphabets</div>}
         {!this.state.searched && (
           <div className="placeholder">
             <p className="place-title">Anagrams</p>

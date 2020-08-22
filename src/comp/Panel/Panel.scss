@@ -1,0 +1,19 @@
+$margin: 8px;
+$theme: #79c3f4;
+
+.Panel {
+  margin: $margin;
+  border: 2px solid $theme;
+  border-radius: 5px;
+  .panel-title,
+  .words {
+    padding: $margin;
+  }
+  .panel-title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .words {
+    font-style: italic;
+  }
+}

@@ -1,0 +1,74 @@
+$margin: 24px;
+$theme: #209cee;
+$grey: #909090;
+
+.App {
+  font-family: "Poppins", sans-serif;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $theme;
+    width: 100%;
+    height: 200px;
+    span {
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+      margin-left: $margin;
+      font-size: 50px;
+      color: #fff;
+    }
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .search-box {
+      margin: $margin;
+      width: 40%;
+    }
+    .search-btn {
+      margin: $margin;
+    }
+  }
+
+  .placeholder {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: $margin auto;
+    height: 25vh;
+    padding: $margin;
+
+    .place-title {
+      font-size: 1.8rem;
+    }
+    .phonetic,
+    .noun {
+      color: $grey;
+    }
+    .noun {
+      font-weight: 100;
+      font-size: 1rem;
+      font-style: italic;
+    }
+    .meaning {
+      margin: 12px 0;
+    }
+    .example {
+      font-size: 0.8rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+  }
+
+  .panels {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    flex-direction: column;
+    justify-items: center;
+  }
+}

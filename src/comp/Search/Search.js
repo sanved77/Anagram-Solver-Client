@@ -44,7 +44,7 @@ const Search = (props) => {
     <div>
       <div className="search">
         <div className="search-box">
-          <input value={term} onKeyDown={keyPress} onChange={handleChange} className="input is-info is-large" type="text" placeholder="enter a word" />
+          <input value={term} onKeyDown={keyPress} onChange={handleChange} className="input is-info is-large" type="text" placeholder="enter a word" maxLength="20" />
         </div>
         <div className="search-btn">
           <button disabled={!term} onClick={grabTheAnagrams} className={loading + " button is-info is-large"}>

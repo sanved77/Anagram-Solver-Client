@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import Panel from "../Panel/Panel";
 import "./Main.scss";
 import Search from "../Search/Search";

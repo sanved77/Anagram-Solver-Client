@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/anagram/static/css/main.2f336ad9.chunk.css",
-    "main.js": "/anagram/static/js/main.712a8057.chunk.js",
-    "main.js.map": "/anagram/static/js/main.712a8057.chunk.js.map",
+    "main.js": "/anagram/static/js/main.a1f84aab.chunk.js",
+    "main.js.map": "/anagram/static/js/main.a1f84aab.chunk.js.map",
     "runtime-main.js": "/anagram/static/js/runtime-main.c721f8a9.js",
     "runtime-main.js.map": "/anagram/static/js/runtime-main.c721f8a9.js.map",
     "static/js/2.19d8bb17.chunk.js": "/anagram/static/js/2.19d8bb17.chunk.js",
     "static/js/2.19d8bb17.chunk.js.map": "/anagram/static/js/2.19d8bb17.chunk.js.map",
     "index.html": "/anagram/index.html",
-    "precache-manifest.ca603bde1ea346675b8e7db2e651fa99.js": "/anagram/precache-manifest.ca603bde1ea346675b8e7db2e651fa99.js",
+    "precache-manifest.194cbf66d98649f584fb4bec83ec0fef.js": "/anagram/precache-manifest.194cbf66d98649f584fb4bec83ec0fef.js",
     "service-worker.js": "/anagram/service-worker.js",
     "static/css/main.2f336ad9.chunk.css.map": "/anagram/static/css/main.2f336ad9.chunk.css.map",
     "static/js/2.19d8bb17.chunk.js.LICENSE.txt": "/anagram/static/js/2.19d8bb17.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c721f8a9.js",
     "static/js/2.19d8bb17.chunk.js",
     "static/css/main.2f336ad9.chunk.css",
-    "static/js/main.712a8057.chunk.js"
+    "static/js/main.a1f84aab.chunk.js"
   ]
 }

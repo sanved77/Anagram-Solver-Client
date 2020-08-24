@@ -1,0 +1,25 @@
+@import "../variables.scss";
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .search-box {
+    margin: $margin;
+    width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  .search-btn {
+    margin: $margin;
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+  }
+}

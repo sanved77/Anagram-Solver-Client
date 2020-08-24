@@ -14,7 +14,7 @@ const Search = (props) => {
 
   const keyPress = (e) => {
     if (e.keyCode === 13) {
-      this.grabTheAnagrams();
+      grabTheAnagrams();
     }
   };
 

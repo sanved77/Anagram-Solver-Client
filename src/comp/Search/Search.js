@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga";
+
 import "./Search.scss";
 import { getAnagrams } from "../../api/getAnagrams";
 
@@ -23,6 +25,10 @@ const Search = (props) => {
         .then((wdata) => {
           props.setNewData(wdata);
           props.removePlaceHolder(true);
+          ReactGA.event({
+            category: "Search",
+            action: trimmedTerm,
+          });
         })
         .catch((e) => {
           console.log(e);

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Panel.scss";
 
-function Panel(props) {
+const Panel = (props) => {
   const title = /\d/.test(props.title) ? props.title + " letter words" : "Anagrams";
   return (
     <div className="Panel">
@@ -16,6 +16,6 @@ function Panel(props) {
       {title === "Anagrams" && props.data.length === 0 && <div className="words">No anagrams found</div>}
     </div>
   );
-}
+};
 
 export default Panel;

@@ -4,17 +4,13 @@ import "./Main.scss";
 import Search from "../Search/Search";
 import PlaceHolder from "../PlaceHolder/PlaceHolder";
 
-function App() {
+const Main = () => {
   const [searched, setSearched] = useState(false);
   const [data, setData] = useState({});
 
-  function setNewData(data) {
-    setData(data);
-  }
+  const setNewData = (data) => setData(data);
 
-  function removePlaceHolder(searched) {
-    setSearched(searched);
-  }
+  const removePlaceHolder = (searched) => setSearched(searched);
 
   return (
     <div className="Main">
@@ -32,6 +28,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default Main;

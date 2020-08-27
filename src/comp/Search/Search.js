@@ -7,15 +7,10 @@ const Search = (props) => {
   const [loading, setLoading] = useState("");
   const [warning, setWarning] = useState(false);
 
-  const handleChange = (e) => {
-    console.log("" + e.target.value);
-    setTerm(e.target.value);
-  };
+  const handleChange = (e) => setTerm(e.target.value);
 
-  const keyPress = (e) => {
-    if (e.keyCode === 13) {
-      grabTheAnagrams();
-    }
+  const keyPress = ({ keyCode }) => {
+    if (keyCode === 13) grabTheAnagrams();
   };
 
   const grabTheAnagrams = () => {
@@ -55,7 +50,7 @@ const Search = (props) => {
           </button>
         </div>
       </div>
-      {warning && <div className="warning">Please only enter alphabets</div>}
+      {warning && <div className="warning">Please only enter alphabets without spaces</div>}
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Main from "../Main/Main";
 
 function App() {
-  return <Main></Main>;
+  return <Main />;
 }
 
 export default App;
